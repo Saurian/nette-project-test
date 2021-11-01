@@ -1,0 +1,6 @@
+# Composer
+.idea/*
+vendor/*
+
+# Config
+config/local.neon

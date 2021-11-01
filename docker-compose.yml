@@ -1,0 +1,59 @@
+version: "3"
+
+services:
+
+  rtsoft.docker.cz:
+    container_name: rtsoft.docker.cz
+#    image: devrun-sandbox-admin
+    restart: always
+    build:
+      context: ./.docker/web/
+#    links:
+#      - mailer
+#      - redis1
+#      - composer
+    external_links:
+      - database
+#      - database_mysql
+    expose:
+      - 80
+      - 443
+      - 6379
+
+    ports:
+      - "5001:80"
+
+    volumes:
+      - ./:/var/www
+      - ./www:/var/www/html
+      - ./var/log/apache:/var/log/apache2
+      - ./database/:/docker-entrypoint-initdb.d
+#      - ./vendor:/var/www/vendor
+    hostname:
+      local.cz
+    environment:
+      VIRTUAL_HOST: rtsoft.docker.local.cz
+      VIRTUAL_NETWORK: nginx-proxy
+      LETSENCRYPT_HOST: local.cz
+      LETSENCRYPT_EMAIL: info@local.cz
+#      MYSQL_HOST: database_mysql
+      MYSQL_HOST: database
+      MYSQL_ROOT_PASSWORD: b4RO2OT!}e
+      MYSQL_DATABASE: docker
+      MYSQL_USER: docker
+      MYSQL_PASSWORD: b11CO9py7ge
+
+#  mailer:
+#    image: nicescale/sendmail
+#    ports:
+#      - "25"
+#    environment:
+#      MAIL_DOMAIN: local.cz
+#      DP_USER: info@local.cz
+#      DP_PASS: b4RO2OT!}e
+
+
+networks:
+  default:
+    external:
+      name: nginx-proxy
