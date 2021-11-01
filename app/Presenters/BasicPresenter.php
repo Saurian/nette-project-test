@@ -160,4 +160,12 @@ class BasicPresenter extends Presenter
 		$this->redirect('this');
 	}
 
+
+	public function testAction()
+	{
+
+	}
+
+
+
 }
