@@ -186,4 +186,12 @@ class AdvancedPresenter extends Presenter
 		$this->redirect('Advanced:');
 	}
 
+
+	public function actionTest1()
+	{
+		// nová funkcionalita
+
+	}
+
+
 }

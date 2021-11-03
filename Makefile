@@ -61,5 +61,5 @@ exec-console:
 	docker exec -it rtsoft.docker.cz /var/www/bin/console
 
 exec-doctrine-mapping:
-	docker exec -it rtsoft.docker.cz /var/www/bin/console orm:convert-mapping -f --from-database --namespace Entities\\Paulik\\ annotation /var/www/app
+	docker exec -it rtsoft.docker.cz /var/www/bin/console orm:convert-mapping -f --from-database --namespace Entities\\Kovo\\ annotation /var/www/app
 

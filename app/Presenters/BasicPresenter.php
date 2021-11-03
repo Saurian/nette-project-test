@@ -160,4 +160,26 @@ class BasicPresenter extends Presenter
 		$this->redirect('this');
 	}
 
+
+	public function testAction()
+	{
+		// zde si zpracujeme nějakou informaci, kterou pak přeneseme do jiného vlákna
+
+	}
+
+
+	public function test2Action()
+	{
+		// zde je nová funkcionalita
+		$a = 1;
+		$b = 1;
+
+		$c = $a + $b;
+
+		dump($c);
+	}
+
+
+
+
 }
