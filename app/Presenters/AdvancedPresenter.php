@@ -193,5 +193,19 @@ class AdvancedPresenter extends Presenter
 
 	}
 
+	public function actionTest2()
+	{
+		// nová funkcionalita
+
+		// zde je nová funkcionalita
+		$a = 1;
+		$b = 1;
+
+		$c = $a & $b;
+
+		dump($c);
+
+	}
+
 
 }

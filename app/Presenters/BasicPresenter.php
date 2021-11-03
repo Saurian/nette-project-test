@@ -180,6 +180,16 @@ class BasicPresenter extends Presenter
 	}
 
 
+	public function tester3Action()
+	{
+		// zde je nová funkcionalita
+		$a = 1;
+		$b = 1;
+
+		$c = $a * $b;
+
+		dump($c);
+	}
 
 
 }
