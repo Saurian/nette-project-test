@@ -170,7 +170,7 @@ class AdvancedPresenter extends Presenter
 		try {
 			$this->em->beginTransaction();
 			$articleCategoryRepository = $this->em->getArticleCategoryRepository();
-			$category = $articleCategoryRepository->fetch($id);
+			$category                  = $articleCategoryRepository->fetch($id);
 
 			$this->em->remove($category);
 			$this->em->flush();
@@ -185,5 +185,37 @@ class AdvancedPresenter extends Presenter
 
 		$this->redirect('Advanced:');
 	}
+
+
+	/**
+	 * vůbec se s tím nepářeme
+	 *
+	 * @return void
+	 */
+	public function actionTest1(): void
+	{
+		// nová funkcionalita
+		return;
+	}
+
+
+
+	/**
+	 * @return void
+	 */
+	public function actionTest2(): void
+	{
+		// nová funkcionalita
+
+		// zde je nová funkcionalita
+		$a = 1;
+		$b = 1;
+
+		$c = $a & $b;
+
+		dump($c);
+
+	}
+
 
 }
