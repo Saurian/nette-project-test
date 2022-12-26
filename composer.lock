@@ -1057,16 +1057,16 @@
         },
         {
             "name": "contributte/utils",
-            "version": "v0.5.0",
+            "version": "v0.5.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/contributte/utils.git",
-                "reference": "8cd55a7d560f65c671bf19bb1a60327170abcd76"
+                "reference": "e2d9c380dbb179cf15a66555924ab2792b2c1769"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/contributte/utils/zipball/8cd55a7d560f65c671bf19bb1a60327170abcd76",
-                "reference": "8cd55a7d560f65c671bf19bb1a60327170abcd76",
+                "url": "https://api.github.com/repos/contributte/utils/zipball/e2d9c380dbb179cf15a66555924ab2792b2c1769",
+                "reference": "e2d9c380dbb179cf15a66555924ab2792b2c1769",
                 "shasum": ""
             },
             "require": {
@@ -1077,14 +1077,13 @@
                 "nette/di": "<3.0.0"
             },
             "require-dev": {
-                "nette/di": "~3.0.0",
-                "ninjify/nunjuck": "^0.3.0",
-                "ninjify/qa": "^0.10.0",
-                "phpstan/extension-installer": "^1.0",
-                "phpstan/phpstan-deprecation-rules": "^0.11",
-                "phpstan/phpstan-nette": "^0.11",
-                "phpstan/phpstan-shim": "^0.11",
-                "phpstan/phpstan-strict-rules": "^0.11"
+                "nette/di": "^3.1.0",
+                "ninjify/nunjuck": "^0.4.0",
+                "ninjify/qa": "^0.12.0",
+                "phpstan/phpstan": "^1.9.0",
+                "phpstan/phpstan-deprecation-rules": "^1.1.0",
+                "phpstan/phpstan-nette": "^1.2.0",
+                "phpstan/phpstan-strict-rules": "^1.4.0"
             },
             "suggest": {
                 "nette/di": "to use DateTimeExtension[CompilerExtension]"
@@ -1092,7 +1091,7 @@
             "type": "library",
             "extra": {
                 "branch-alias": {
-                    "dev-master": "0.5.x-dev"
+                    "dev-master": "0.6.x-dev"
                 }
             },
             "autoload": {
@@ -1121,9 +1120,19 @@
             ],
             "support": {
                 "issues": "https://github.com/contributte/utils/issues",
-                "source": "https://github.com/contributte/utils/tree/v0.5.0"
+                "source": "https://github.com/contributte/utils/tree/v0.5.2"
             },
-            "time": "2020-12-11T11:13:16+00:00"
+            "funding": [
+                {
+                    "url": "https://contributte.org/partners.html",
+                    "type": "custom"
+                },
+                {
+                    "url": "https://github.com/f3l1x",
+                    "type": "github"
+                }
+            ],
+            "time": "2022-12-26T13:10:34+00:00"
         },
         {
             "name": "doctrine/annotations",
@@ -3696,27 +3705,27 @@
         },
         {
             "name": "nette/utils",
-            "version": "v3.2.3",
+            "version": "v3.2.8",
             "source": {
                 "type": "git",
                 "url": "https://github.com/nette/utils.git",
-                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822"
+                "reference": "02a54c4c872b99e4ec05c4aec54b5a06eb0f6368"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/nette/utils/zipball/5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
-                "reference": "5c36cc1ba9bb6abb8a9e425cf054e0c3fd5b9822",
+                "url": "https://api.github.com/repos/nette/utils/zipball/02a54c4c872b99e4ec05c4aec54b5a06eb0f6368",
+                "reference": "02a54c4c872b99e4ec05c4aec54b5a06eb0f6368",
                 "shasum": ""
             },
             "require": {
-                "php": ">=7.2 <8.1"
+                "php": ">=7.2 <8.3"
             },
             "conflict": {
                 "nette/di": "<3.0.6"
             },
             "require-dev": {
                 "nette/tester": "~2.0",
-                "phpstan/phpstan": "^0.12",
+                "phpstan/phpstan": "^1.0",
                 "tracy/tracy": "^2.3"
             },
             "suggest": {
@@ -3775,9 +3784,9 @@
             ],
             "support": {
                 "issues": "https://github.com/nette/utils/issues",
-                "source": "https://github.com/nette/utils/tree/v3.2.3"
+                "source": "https://github.com/nette/utils/tree/v3.2.8"
             },
-            "time": "2021-08-16T21:05:00+00:00"
+            "time": "2022-09-12T23:36:20+00:00"
         },
         {
             "name": "nettrine/annotations",
@@ -6636,5 +6645,5 @@
         "php": ">=8.0"
     },
     "platform-dev": [],
-    "plugin-api-version": "2.1.0"
+    "plugin-api-version": "2.3.0"
 }
